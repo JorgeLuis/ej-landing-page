@@ -2,9 +2,10 @@ import { Button } from '@chakra-ui/button'
 import { Image } from '@chakra-ui/image'
 import { Box, Center, Heading, HStack, Text } from '@chakra-ui/layout'
 import React from 'react'
+import StyledCard from '../StyledCard'
 
 const ProyectoCard = ({ title, content, img }) => (
-  <Box padding={8} boxShadow="lg" border={`1px solid rgba(158, 158, 158, 0.1)`}>
+  <StyledCard padding={8} hasBorder>
     <Center>
       <Heading size="sm">{title}</Heading>
     </Center>
@@ -17,7 +18,7 @@ const ProyectoCard = ({ title, content, img }) => (
     <Center>
       <Button variant="ghost">¡Click!</Button>
     </Center>
-  </Box>
+  </StyledCard>
 )
 
 export default function ProyectosSection() {

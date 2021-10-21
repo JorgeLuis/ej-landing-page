@@ -1,15 +1,14 @@
 import { Box, Center, Heading, Text } from '@chakra-ui/layout'
 import React from 'react'
+import StyledCard from '../StyledCard'
 
 export default function NosotrosSection() {
   return (
     <Box as="section" id="Nosotros">
-      {/* TODO: Reutilizar con un componente Card */}
-      <Box
-        boxShadow="lg"
+      <StyledCard
         paddingX={6}
         paddingY={8}
-        border={`1px solid rgba(158, 158, 158, 0.1)`}
+        hasBorder
       >
         <Center>
           <Heading>Nosotros</Heading>
@@ -31,7 +30,7 @@ export default function NosotrosSection() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
           consequuntur labore? Ea totam voluptas amet!
         </Text>
-      </Box>
+      </StyledCard>
     </Box>
   )
 }

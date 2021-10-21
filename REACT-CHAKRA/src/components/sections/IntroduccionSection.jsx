@@ -1,21 +1,20 @@
 import { Image } from '@chakra-ui/image'
 import { Box, Heading, HStack, Text } from '@chakra-ui/layout'
 import React from 'react'
+import StyledCard from '../StyledCard'
 
 export default function IntroduccionSection() {
   return (
     <HStack spacing={8} as="section">
-      <Box boxShadow="lg">
+      <StyledCard boxShadow="lg">
         <Image src="images/sal.jpg" alt="jane-doe" loading="lazy" objectFit="cover" />
-      </Box>
+      </StyledCard>
 
-      {/* TODO: Reutilizar en un component card */}
-      <Box
+      <StyledCard
         width="60%"
-        boxShadow="lg"
         paddingX={6}
         paddingY={8}
-        border={`1px solid rgba(158, 158, 158, 0.1)`}
+        hasBorder
       >
         <Heading>¡Hay Equipo!</Heading>
         <Text marginTop={4}>
@@ -25,7 +24,7 @@ export default function IntroduccionSection() {
           nascetur
           ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
         </Text>
-      </Box>
+      </StyledCard>
     </HStack>
   )
 }

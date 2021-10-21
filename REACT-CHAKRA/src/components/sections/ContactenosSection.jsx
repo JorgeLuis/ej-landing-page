@@ -4,12 +4,13 @@ import { InfoOutlineIcon, EmailIcon } from '@chakra-ui/icons'
 import React from 'react'
 import { Textarea } from '@chakra-ui/textarea'
 import { Button } from '@chakra-ui/button'
+import StyledCard from '../StyledCard'
 
 /* TODO: Exportar a un componente para hacer un map */
 export default function ContactenosSection() {
   return (
     <Box as="section" width="100%" id="Contactos">
-      <Box boxShadow="lg" padding={4} border={`1px solid rgba(158, 158, 158, 0.1)`}>
+      <StyledCard padding={4} hasBorder>
         <Center paddingY={6}>
           <Heading>Contactenos</Heading>
         </Center>
@@ -56,7 +57,7 @@ export default function ContactenosSection() {
 
           <Button alignSelf="center" size="lg" colorScheme="pink" variant="solid">Enviar</Button>
         </VStack>
-      </Box>
+      </StyledCard>
     </Box>
   )
 }

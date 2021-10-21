@@ -6,6 +6,7 @@ import { ReactComponent as JavascriptIcon } from '../../assets/icons/icons8-java
 import { ReactComponent as BootstrapIcon } from '../../assets/icons/icons8-bootstrap.svg'
 import { ReactComponent as ReactIcon } from '../../assets/icons/icons8-react-native.svg'
 import { ReactComponent as GitIcon } from '../../assets/icons/icons8-git.svg'
+import StyledCard from '../StyledCard'
 
 /* TODO: Usar un map para la lista de tecnologias */
 export default function TecnologiasSection() {
@@ -18,29 +19,29 @@ export default function TecnologiasSection() {
       <Center marginTop={8}>
         <SimpleGrid as="section" columns={3} spacingX={64} spacingY={10} paddingX={32}>
           {/* TODO: Implementar icon card component */}
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <HTML5Icon alt="HTML5 Icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <JavascriptIcon alt="Javascript icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <CSS3Icon alt="CSS3 icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <BootstrapIcon alt="Bootstrap icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <ReactIcon alt="React icon" />
-          </Box>
+          </StyledCard>
 
-          <Box width="80%" borderRadius="5%" boxShadow="lg">
+          <StyledCard width="80%" borderRadius="5%">
             <GitIcon alt="Git icon" />
-          </Box>
+          </StyledCard>
         </SimpleGrid >
       </Center >
     </Box>
